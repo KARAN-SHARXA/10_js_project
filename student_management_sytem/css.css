@@ -1,0 +1,9 @@
+#bgVideo{
+  position: fixed;   /* background fix ho */
+  right: 0;
+  bottom: 0;
+  min-width: 100%;   /* poora screen cover kare */
+  min-height: 100%;
+  z-index: -1;       /* sab elements ke peeche rahe */
+  object-fit: cover; /* screen ke hisaab se adjust */
+}
