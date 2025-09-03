@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  padding: 20px;
+
+}
+h2{
+    color: #111;              /* dark black heading */
+  margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+}
+input[type="number"] {
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: #333;         /* dark button */
+  color: white;             /* white text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #555;         /* hover effect */
+}
+
+
+
+
+#output {
+  margin-top: 20px;
+  color: black;             /* dark black text */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#privous{
+    margin-top: 20px;
+}
