@@ -1,37 +1,22 @@
-let counter = 0;
-
-const counterDisplaye = document.getElementById("counter")
-const increasebtn = document.getElementById("increase");
-const decreasebtn = document.getElementById("decrease");
-const resetBtn = document.getElementById("reset");
+let c = 0; ci = 0; cd = 0;
+const count = document.getElementById("count");
+const inCount = document.getElementById("incCount");
+const decCount = document.getElementById("decCount");
 
 
-
-
-function updateDisplay(){
-    counterDisplaye.textContent=counter;
-
-
-
-    if(counter>0){
-        counterDisplaye.style.color="green";
-    }else if(counter<0){
-        counterDisplaye.style.color="red";
-    }else{
-        counterDisplaye.style.color="black"
-    }
+function inc(){
+    c++;
+    ci++
+    update();
 }
 
-increasebtn.addEventListener("click",()=>{
-    counter++;
-    updateDisplay();
-});
-decreasebtn.addEventListener("click",()=>{
-    counter--;
-    updateDisplay();
-});
-resetBtn.addEventListener("click",()=>{
-    counter = 0;
-    updateDisplay();
-
-})
+function dec(){
+    c=c>0 ? c-1:0;
+    cd++
+    update();
+}
+function update(){
+    count.textContent=c;
+    inCount.textContent=ci;
+    decCount.textContent=cd;
+}
